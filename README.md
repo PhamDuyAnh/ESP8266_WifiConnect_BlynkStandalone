@@ -1,0 +1,47 @@
+# ESP8266_WifiConnect_BlynkStandalone
+ESP8266 - Auto select Wifi connect - Blynk standalone [Vietnamese language]
+
+### Phần cứng gồm
+  - Trên module đã được thiết kế sẵn
+    * Push button
+    * LDR
+      - ADC
+    * RGB LED
+      - GPIO12 - LED Green 
+      - GPIO13 - LED Blue
+      - GPIO15 - LED Red
+    * DTH22 - cảm biến môi trường được kết nối thêm.
+      - GPIO05
+      
+![ESP8266 Module](https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone/blob/master/Esp8266-module.jpg)
+
+### Thư viện
+  - Dùng các thư viện
+    * ESP8266WiFi.h - http://arduino.esp8266.com/stable/package_esp8266com_index.json
+    * BlynkSimpleEsp8266.h - https://github.com/blynkkk/blynk-library
+    * DHT.h - https://github.com/adafruit/DHT-sensor-library.git
+
+### Hoạt động
+  - Tự động lựa chọn các Wifi SSID đã được lưu và kết nối với SSID có tín hiệu mạnh nhất mà ESP8266 tìm được.
+  - Kết nối với Blynk Cloud Local server (hoặc Blynk server).
+  - Gởi các dữ liệu lên biến Virtuals:
+    * V0 - cường độ tín hiệu Wifi
+    * V1 - LDR (Light Dependent Resistor)
+    * V7 - độ ẩm (humidity) từ cảm biến DTH22
+    * V8 - nhiệt độ (temperature) từ cảm biến DTH22
+  - Nhận các dữ liệu
+    * V3 - giá trị từ 0-1023, điều khiển LED Green
+    * V4 - giá trị từ 0-1023, điều khiển LED Blue
+    * V5 - giá trị từ 0-1023, điều khiển LED Red
+
+![Screenshot](https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone/blob/master/Screenshot_2017-08-30-09-44-22.png)
+
+# Source 
+Có thể download tại <https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone>.
+
+# License
+Được chia sẻ theo thỏa ước GNU v3.0
+
+# Tác giả
+  Phạm Duy Anh (CKD)
+  http://cncprovn.com
