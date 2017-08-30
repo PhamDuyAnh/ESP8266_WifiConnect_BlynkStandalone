@@ -27,6 +27,8 @@
  * Pham Duy Anh - CKD - phamduyanh@gmail.com
  * Create: 25-07-2017
  * Update: 30-07-2017
+ * GitHup: https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone
+ * Forum: http://forum.cncprovn.com/forums/80-Arduino
  **************************************************************/
 //Blynk.begin(auth, ssid, pass);
 //You can also specify server:
