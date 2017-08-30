@@ -33,15 +33,21 @@ ESP8266 - Auto select Wifi connect - Blynk standalone [Vietnamese language]
     * V3 - giá trị từ 0-1023, điều khiển LED Green
     * V4 - giá trị từ 0-1023, điều khiển LED Blue
     * V5 - giá trị từ 0-1023, điều khiển LED Red
+  - Lưu ý
+    * Blynk.begin -> kết nối wifi và liên kết đến blynk cloud
+      - Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 8442);
+      - Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8442);
+    * BLYNK_READ(virtualPin) ->function will be called every time App Widget requests data for Virtual Pin
+    * BLYNK_WRITE(virtualPin) -> function will be called every time App Widget writes value to Virtual Pin
 
 ![Screenshot](https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone/blob/master/Screenshot_2017-08-30-09-44-22.png)
 
-# Source 
+### Source 
 Có thể download tại <https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone>.
 
-# License
+### License
 Được chia sẻ theo thỏa ước GNU v3.0
 
-# Tác giả
+### Tác giả
   Phạm Duy Anh (CKD)
   http://cncprovn.com
