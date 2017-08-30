@@ -35,8 +35,8 @@ ESP8266 - Auto select Wifi connect - Blynk standalone [Vietnamese language]
     * V5 - giá trị từ 0-1023, điều khiển LED Red
   - Lưu ý
     * Blynk.begin -> kết nối wifi và liên kết đến blynk cloud
-      - Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 8442);
-      - Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8442);
+      - Blynk.begin(auth, ssid, pass, "myblynk.homeip.net", 8442) -> liên kết đến một server khác blynk-cloud.com
+      - Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8442) -> liên kết đến một IP
     * BLYNK_READ(virtualPin) ->function will be called every time App Widget requests data for Virtual Pin
     * BLYNK_WRITE(virtualPin) -> function will be called every time App Widget writes value to Virtual Pin
 
