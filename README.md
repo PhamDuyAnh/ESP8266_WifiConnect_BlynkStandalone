@@ -49,7 +49,7 @@ ESP8266 - Auto select Wifi connect - Blynk standalone [Vietnamese language]
 Có thể download tại <https://github.com/PhamDuyAnh/ESP8266_WifiConnect_BlynkStandalone>.
 
 ### License
-Được chia sẻ theo thỏa ước GNU v3.0
+Được chia sẻ theo thỏa ước GNU GPL v3.0
 
 ### Tác giả
   Phạm Duy Anh (CKD)
